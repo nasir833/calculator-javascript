@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!------ CSS  ------>
+    <link rel="stylesheet" href="style.css" />
+    <!------ GOOGLE FONT  ------>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <h3>Calculator</h3>
+        <div class="output">
+            <!-- <span class="input-up new">abc</span> -->
+            <span class="output-down" id="output"><span id="output-down"></span></span>
+        </div>
+        <div class="container input">
+
+            <div class="first-line">
+                <button id="C" class="btn btn-reset">C</button>
+                <button id="/" class="btn btn-divide d">/</button>
+            </div>
+            <div class="second-line">
+                <button id="7" class="btn d">7</button>
+                <button id="8" class="btn d">8</button>
+                <button id="9" class="btn d">9</button>
+                <button id="+" class="btn btn-plus d">+</button>
+            </div>
+            <div class="third-line">
+                <button id="4" class="btn d">4</button>
+                <button id="5" class="btn d">5</button>
+                <button id="6" class="btn d">6</button>
+                <button id="*" class="btn btn-multiply d">*</button>
+            </div>
+            <div class="fourth-line">
+                <button id="1" class="btn d">1</button>
+                <button id="2" class="btn d">2</button>
+                <button id="3" class="btn d">3</button>
+                <button id="-" class="btn btn-minus">-</button>
+            </div>
+            <div class="fifth-line">
+                <button id="0" class="btn d">0</button>
+                <button id="00" class="btn d">00</button>
+                <button id="=" class="btn btn-equal">=</button>
+            </div>
+        </div>
+        </main>
+        <script src="./index.js"></script>
+        <script src="https://kit.fontawesome.com/8af973fc09.js" crossorigin="anonymous"></script>
+    </body>
+    </html>

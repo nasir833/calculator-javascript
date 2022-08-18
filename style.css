@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+div.container{
+    background-color: black;
+    border-radius: 0 0 12px 12px ;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'output'
+    'input-btn';
+}
+div.input{
+    grid-area: input-btn;
+}
+div.output{
+    grid-area: output;
+}
+main{
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 12px;
+    width: max-content;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+div>.btn{
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    margin: 7px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+    background-color: black;
+    box-shadow: rgba(255, 255, 255, 1) 0px 0px 8px;
+}
+div>.btn:hover,button.btn-reset:hover{
+    cursor: pointer;
+    background-color: rgb(70, 70, 70);
+    transition: all 0.1s ease-in-out;
+}
+div>.btn:active{
+    background-color: white;
+    color: black;
+}
+button.btn-divide,button.btn-plus,button.btn-multiply,button.btn-minus{
+    color: orange;
+}
+div>.btn-equal,button.btn-reset,button.btn-divide{
+    width: 138px;
+    height: 60px;
+    margin: 7px 7px;
+    border-radius: 30px;
+    color: white;
+    background-color: orange;
+}
+button.btn-reset,button.btn-divide{
+    background-color: black;
+}
+
+div.output{
+    /* border: 1px solid blue; */
+    box-shadow: inset -2px -2px 4px #eeeeee,
+    inset 2px 2px 4px #f8f8f8;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 1rem 0 0;
+    text-align: right;
+}
+h3{
+    text-align: left;
+    padding: 0.5rem 0 0.2rem 1rem;
+}
+.output>.input-up,.output>.output-down{
+    display: block;
+    padding: 0.3rem;
+}
+/* .output>.new{
+    transform: translateY(35px);
+} */
